@@ -1,15 +1,11 @@
-import { Button, Card, CardActions, CardContent, CardMedia, makeStyles, Typography } from "@mui/material";
-import { useState } from "react";
+import { Card, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
 
 export default function CardItem({comic}) {  
 return(
   <Card sx={{ height: "100%", display: "flex", flexDirection: "column" }}>
     <CardMedia
-      component="img"      
-      sx={{
-        // 16:9
-        pt: "56.25%",
-      }}
+      component="img" 
+      height="200"
       image={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}
       alt="image"
     />
@@ -27,10 +23,7 @@ return(
       </Typography>
     </CardContent>
     <CardActions>
-      <Button size="small">View</Button>
-      <Button size="small">Edit</Button>
     </CardActions>
   </Card>
-)
-  
+)  
 }

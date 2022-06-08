@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-function usePagination(data, itemsPerPage) {
+//Custom Hook
+function usePagination(data=[], itemsPerPage) {
   const [currentPage, setCurrentPage] = useState(1);
   const maxPage = Math.ceil(data.length / itemsPerPage);
 
