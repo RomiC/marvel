@@ -65,7 +65,7 @@ function App() {
               color="text.primary"
               gutterBottom
             >
-              Marvel Movies
+              Marvel Comic Books
             </Typography>  
               <Typography variant="caption" display="block" gutterBottom> Filter by</Typography>
               <TextField  size="small" id="filter" name="filter" type="text" value={filter} onChange={(event) => setFilter(event.target.value)} />
